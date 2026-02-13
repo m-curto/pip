@@ -29,7 +29,7 @@
 
     <title>mcurto</title>
   </head>
-  <body>
+<body>
     <header>
       <div class="top">
         <h1>Matthieu Curto</h1>
@@ -52,27 +52,68 @@
           ></a>
         </div>
       </div>
+      <h2>
       <div class="cs-tooltip">
-          <p>Transcender.
-          <span style="left: 115%" class="text">Successfully passed the 42 Network Common Core</span>
-        </p>
+          Transcender.
+          <span style="left: 100%" class="text">Successfully passed the 42 Network Common Core</span>
       </div>
-      <div>
-        <button class="cs-btn">Home</button>
-        <button disabled class="cs-btn">Tools</button>
-        <button disabled class="cs-btn">Contact</button>
+    </h2>
+  <div>
+    <section>
+
+    <button class="cs-btn" style="color: #c4b550;">Home</button>
+    <button disabled class="cs-btn">Tools</button>
+    <button disabled class="cs-btn">Contact</button>
+
+  <button
+    type="button"
+    class="cs-btn"
+    onclick="document.querySelector('.cs-dialog').showModal();"
+  >
+    Resources
+  </button>
+  <dialog class="cs-dialog">
+    <form method="dialog">
+      <div class="heading">
+        <div class="wrapper">
+          <div class="icon"></div>
+          <p class="text">Resources</p>
+        </div>
+        <button class="cs-btn close"></button>
       </div>
-    </header>
+      <div class="content">
+        <div class="cs-tooltip">
+          <a target="_blank" href="https://ghchart.rshah.org/">Github Chart API</a>.
+          <span style="left: 100%" class="text">Generates an SVG of Github</span>
+        </div>
+        <br />
+        <div class="cs-tooltip">
+          <a target="_blank" href="http://samke.me">CSS style Made by Samuel</a>.
+          <span style="left: 100%" class="text">Based on Counter Strike 1.6</span>
+        </div>
+        <br />
+        <div class="cs-tooltip">
+          <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Tutorial/Creating_3D_objects_using_WebGL">Mozilla Developer Network 3D Cube</a>.
+          <span style="left: 100%" class="text">Example from Docs</span>
+        </div>
+      </div>
+      <menu class="footer-btns">
+        <button class="cs-btn">OK</button>
+      </menu>
+    </form>
+  </dialog>
+</section>
 
-
+</header>
 
     <div style="margin-bottom: 10px" class="installation">
 
         <h2>Lorem.</h2>
         <hr class="cs-hr" />
         <br />
-
-
+        <div>
+          <img src="http://ghchart.rshah.org/m-curto" alt="m-curto's Github chart" />
+        </div>
         <div class="cs-tabs">
           <input
             class="radiotab"
@@ -84,8 +125,7 @@
           />
           <label class="label" for="tabone">42 Common Core</label>
           <div class="panel" tabindex="1">
-            <h2>Tab One Content</h2>
-            <p>Tab content...</p>
+
           </div>
           <input
             class="radiotab"
@@ -94,10 +134,11 @@
             type="radio"
             id="tabtwo"
           />
-          <label class="label" for="tabtwo">Tab Two</label>
+          <label class="label" for="tabtwo">Cube</label>
           <div class="panel" tabindex="1">
-            <h2>Tab Two Content</h2>
-            <p>Tab content...</p>
+              <body>
+                <canvas id="glcanvas" width="640" height="480"></canvas>
+              </body>
           </div>
           <input
             class="radiotab"
@@ -114,11 +155,25 @@
         </div>
 
 
-
     <footer>
-      <a target="_blank" href="http://samke.me">CSS style Samuel</a>.
+      <a target="_blank" href="http://google.com">qwe</a>.
     </footer>
 
+  <head>
+    <meta charset="utf-8" />
+    <title>WebGL Demo</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js"
+      integrity="sha512-zhHQR0/H5SEBL3Wn6yYSaTTZej12z0hVZKOv3TwCUXT1z5qeqGcXJLLrbERYRScEDDpYIJhPC1fk31gqR783iQ=="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="js/cube/webgl-demo.js" type="module"></script>
+  </head>
+
+
+
+
     <script type="module" src="./js/main.js"></script>
-  </body>
+</body>
 </html>
