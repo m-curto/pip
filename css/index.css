@@ -40,15 +40,15 @@ header {
       }
 
       .gh {
-        background-image: url(../resources/svg/github.svg);
+        background-image: url(../resources/links/github.svg);
       }
 
       .x {
-        background-image: url(../resources/svg/x.svg);
+        background-image: url(../resources/links/x.svg);
       }
 
       .ft {
-        background-image: url(../resources/svg/ft.webp);
+        background-image: url(../resources/links/ft.webp);
       }
     }
   }
