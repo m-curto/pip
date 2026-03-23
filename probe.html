@@ -155,7 +155,6 @@
         <button class="cs-btn close"></button>
       </div>
       <div class="content">
-
   <p>
     hold1 at all cost.
   </p>
@@ -176,8 +175,28 @@
   </dialog>
 
   <br />
-  <br />
 
+<fieldset class="cs-fieldset">
+  <legend></legend>
+
+  <div class="radio-wrapper">
+    <input type="radio" name="notation" id="notation-tekken7">
+    <label for="notation-tekken7">Tekken 7 Notation</label>
+  </div>
+
+  <div class="radio-wrapper">
+    <input type="radio" name="notation" id="notation-tekken8" checked>
+    <label for="notation-tekken8">Tekken 8 Notation</label>
+  </div>
+
+
+  <div class="radio-wrapper">
+    <input type="radio" name="notation" id="notation-text">
+    <label for="notation-text">Text Notation</label>
+  </div>
+</fieldset>
+
+  <br />
 
 <article class="article-content">
 
@@ -194,9 +213,28 @@
   <div style="position: relative;">
   
     <div style="padding-right: 100px;">
-    <p>
-      hold 1, if there is [STANDING CLE DE BRAS DERRIERE](CWFL) hold 2 for avoid (RDC)
-    </p>
+
+    <img src="resources/king_throws/hold1.png" alt="HOLD1 PNG" width="75" style="vertical-align: middle;">
+
+
+      hold 1, if there is
+
+  <div class="cs-tooltip">
+    <u>CWFL</u>
+    <span style="left: 100%" class="text">Chicken Wing Face Lock</span>
+    <span style="left: 100%" class="text"><img src="resources/king_throws/chicken_wing_face_lock.gif" alt="CWFL GIF" width="150"></span>
+  </div>
+   hold 2 for avoiding
+
+
+
+  <div class="cs-tooltip">
+    <u>RDC</u>.
+    
+    <span style="left: 100%" class="text">Rolling Death Cradle</span>
+    <span style="left: 100%" class="text"><img src="resources/king_throws/rolling_death_cradle.gif" alt="RDC GIF" width="150"></span>
+  </div>
+
     </div>
   
     <img src="resources/king_throws/arm_breaker.gif" alt="AB GIF" style=" position: absolute; top: 0; right: 0; width: 150px;">
@@ -282,7 +320,7 @@ KB  (50%*60)               = 30dmg.
     </p>
     </div>
   
-    <img src="resources/king_throws/.gif"
+    <img src="resources/king_throws/ras_rssb.gif"
          alt="RAS_RSSB GIF"
          style=" position: absolute; top: 0; right: 0; width: 150px;">
 
@@ -311,7 +349,7 @@ KB  (50%*60)               = 30dmg.
       </p>
     </div>
   
-    <img src="resources/king_throws/.gif"
+    <img src="resources/king_throws/ultimate_tackle.gif"
          alt="UT GIF"
          style=" position: absolute; top: 0; right: 0; width: 150px;">
 
@@ -346,7 +384,7 @@ KB  (50%*60)               = 30dmg.
 
     </div>
   
-    <img src="resources/king_throws/.gif"
+    <img src="resources/king_throws/cobra_clutch.gif"
          alt="CC GIF"
          style=" position: absolute; top: 0; right: 0; width: 150px;">
 
@@ -399,20 +437,55 @@ KB  (50%*60)               = 30dmg.
     but if you hold1 and if you can (should) notice CWFL, you are now at 47% of throws (11/23 without tackle).
   </p>
 
+<div class="cs-checkbox">
+  <input id="improved" type="checkbox" />
+  <label class="cs-checkbox__label" for="improved">Ignore SR, SN & DSF + CWFL awareness</label>
+</div>
+
+  <hr class="cs-hr" />
+
+<div class="cs-checkbox">
+  <input id="ab" type="checkbox" />
+  <label class="cs-checkbox__label" for="ab">Arm Breaker</label>
+</div>
+
+<div class="cs-checkbox">
+  <input id="shh" type="checkbox" />
+  <label class="cs-checkbox__label" for="shh">Standing Heel Hold</label>
+</div>
+
+<div class="cs-checkbox">
+  <input id="ras" type="checkbox" />
+  <label class="cs-checkbox__label" for="ras">Reverse Arm Slam</label>
+</div>
+
+<div class="cs-checkbox">
+  <input id="rssb" type="checkbox" />
+
+  <label class="cs-checkbox__label" for="rssb">Reverse Special Stretch Bomb</label>
+</div>
+
+<div class="cs-checkbox">
+  <input id="cc" type="checkbox" />
+  <label class="cs-checkbox__label" for="cc">Cobra Clutch</label>
+</div>
+
+<div class="cs-checkbox">
+  <input id="ut" type="checkbox" />
+  <label class="cs-checkbox__label" for="ut">Ultimate Tackle</label>
+</div>
+
+
+<p>Hold1 : <span id="math-one">0</span>/<span id="math-max-1">0</span> = <span id="math-percent-1">0</span>%</p>
+<p>Hold2 : <span id="math-two">0</span>/<span id="math-max-2">0</span> = <span id="math-percent-2">0</span>%</p>
+<p>Hold12 : <span id="math-onetwo">0</span>/<span id="math-max-12">0</span> = <span id="math-percent-12">0</span>%</p>
 
 
 </article>
 
-
-
-
-
-
-
-      
       <br />
 
-        <footer>
+    <footer>
           <div>
             <img src="resources/buttons/button83.gif" alt="animation">
             <img src="resources/buttons/413.gif" alt="animation">
@@ -425,7 +498,7 @@ KB  (50%*60)               = 30dmg.
             <br />
             <a target="_blank" href="http://google.com">qwe</a>.
     </footer>
-    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="js/main.js"></script>
 
 </body>
 </html>
