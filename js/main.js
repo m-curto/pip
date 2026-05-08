@@ -3,8 +3,8 @@ document.querySelectorAll(".toggle-vision").forEach((button) => {
     const codeBlock = this.closest(".code-block").querySelector(".inner");
     codeBlock.classList.toggle("hidden");
     this.textContent = codeBlock.classList.contains("hidden")
-      ? "Show code"
-      : "Hide code";
+      ? "Show"
+      : "Hide";
   });
 });
 
